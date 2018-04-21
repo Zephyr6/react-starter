@@ -1,8 +1,6 @@
 module.exports = {
-  parser: "sugarss",
   plugins: {
     "postcss-import": {},
-    "postcss-cssnext": {},
-    cssnano: {}
+    "postcss-cssnext": { browsers: ["Last 2 versions", "IE >= 10"] }
   }
 };
